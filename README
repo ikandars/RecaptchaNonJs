@@ -1,0 +1,13 @@
+By default, to use reCAPTCHA you need JavaScript snippet or at least non-JavaScript code which is an iframe tag.
+So what if you need only the reCAPTCHA image, is it possible? The answer is yes.
+
+All you need to do is:
+
+1. Get the image url and the challenge string from reCAPTCHA API.
+2. Display the image as useal (by img tag) in your html page.
+3. Place your challenge string in hidden input form.
+3. Catch the input from the form and send back to reCAPTCHA API to get the validation answer.
+
+To run this process you can use this RecaptchaNonJs library in PHP or Python.
+
+See the demo here http://kandar.info/demo/RecaptchaNonJs/form.php
