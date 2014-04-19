@@ -37,6 +37,7 @@ class RecaptchaNonJs {
         $resourceURL    = $this->baseApiUrl.'challenge?k='.$this->publicKey;
         $response       = file_get_contents($resourceURL);
         
+        $response = str_replace("\\", "", $response);
         preg_match( '/{([^}]+)}/', $response, $matches);
         
         $json = str_replace("'", '"', $matches[0]);
