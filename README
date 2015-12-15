@@ -1,3 +1,5 @@
+YoseTheGame
+
 By default, to use reCAPTCHA you need JavaScript snippet or at least non-JavaScript code which is an iframe tag.
 So what if you need only the reCAPTCHA image, is it possible? The answer is yes.
 
